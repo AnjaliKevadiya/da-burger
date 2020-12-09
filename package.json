@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/AnjaliKevadiya/da-burger/issues"
   },
-  "homepage": "https://github.com/AnjaliKevadiya/da-burger#readme"
+  "homepage": "https://github.com/AnjaliKevadiya/da-burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars-helper-css": "^0.1.0",
+    "mysql": "^2.18.1"
+  }
 }
