@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/AnjaliKevadiya/da-burger#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
-    "handlebars-helper-css": "^0.1.0",
-    "mysql": "^2.18.1"
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
   }
 }
