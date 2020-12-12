@@ -17,3 +17,8 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+body,
+.card {
+  background-color: silver;
+}
