@@ -19,6 +19,7 @@ router.get("/api/burgers", function (req, res) {
   });
 });
 
+//api route to add new burger
 router.post("/api/burgers", function (req, res) {
   burger.create(
     ["burger_name", "devoured"],
@@ -30,6 +31,7 @@ router.post("/api/burgers", function (req, res) {
   );
 });
 
+//api route to update devoured field of existing burger
 router.put("/api/burgers/:id", function (req, res) {
   var condition = "id = " + req.params.id;
 
@@ -51,6 +53,7 @@ router.put("/api/burgers/:id", function (req, res) {
   );
 });
 
+//api route to delete existing burger
 router.delete("/api/burgers/:id", function (req, res) {
   var condition = "id = " + req.params.id;
 
