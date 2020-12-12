@@ -1,13 +1,22 @@
+// include express dependencies
 var express = require("express");
 
+// use express router to create router handlers
 var router = express.Router();
 
 // Import the model (burger.js) to use its database functions.
 var burger = require("../models/burger.js");
 
-// Create all our routes and set up logic within those routes where required.
+// root route open page index.html
 router.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "public/index.html"));
+});
+
+// route to get all the burgers
+router.get("/burgers", function (req, res) {
+  burger.all(function (data) {
+    res.json({ burgers: data });
+  });
 });
 
 router.post("/api/burgers", function (req, res) {
