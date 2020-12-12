@@ -12,8 +12,8 @@ router.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
-// route to get all the burgers
-router.get("/burgers", function (req, res) {
+// api route to get all the burgers from database
+router.get("/api/burgers", function (req, res) {
   burger.all(function (data) {
     res.json({ burgers: data });
   });
