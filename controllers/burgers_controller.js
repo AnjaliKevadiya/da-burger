@@ -13,14 +13,14 @@ router.get("/", function (req, res) {
 });
 
 // api route to get all the burgers from database
-router.get("/api/burgers", function (req, res) {
+router.get("/burgers", function (req, res) {
   burger.all(function (data) {
     res.json({ burgers: data });
   });
 });
 
 //api route to add new burger
-router.post("/api/burgers", function (req, res) {
+router.post("/burgers", function (req, res) {
   burger.create(
     ["burger_name", "devoured"],
     [req.body.burger_name, req.body.devoured],
@@ -32,7 +32,7 @@ router.post("/api/burgers", function (req, res) {
 });
 
 //api route to update devoured field of existing burger
-router.put("/api/burgers/:id", function (req, res) {
+router.put("/burgers/:id", function (req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
@@ -54,7 +54,7 @@ router.put("/api/burgers/:id", function (req, res) {
 });
 
 //api route to delete existing burger
-router.delete("/api/burgers/:id", function (req, res) {
+router.delete("/burgers/:id", function (req, res) {
   var condition = "id = " + req.params.id;
 
   burger.delete(condition, function (result) {
