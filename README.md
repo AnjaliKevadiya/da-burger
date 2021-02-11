@@ -8,6 +8,8 @@
 
 - [Installation](#installation)
 
+- [Deployed Link](#deployed-link)
+
 - [Preview](#preview)
 
 - [Questions](#questions)
@@ -35,6 +37,7 @@ To install necessary dependencies, run the following command:
 ```
 npm install
 ```
+## [Deployed Link](https://da-burger-res.herokuapp.com/)
 
 ## Preview
 
