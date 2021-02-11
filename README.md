@@ -33,12 +33,6 @@ This application will keep track of all your burgers and their status(eaten and 
 To install necessary dependencies, run the following command:
 
 ```
-npm i
-```
-
-OR
-
-```
 npm install
 ```
 
